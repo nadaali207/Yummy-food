@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="position-fixed top-0 bottom-0 start-0 end-0 d-none justify-content-center align-items-center">
+        <span class="loader"></span>
+    </div>
+    
+    <div class="left-side min-vh-100 position-fixed top-0 bg-danger z-3 d-flex">
+        <div class="side-menu d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li id="Search">Search</li>
+                    <li onclick="getCategory(); ">Categories</li>
+                    <li onclick="getAreas()">Area</li>
+                    <li onclick=" getIngredients()">Ingredients</li>
+                    <li id="contact">Contact Us</li>
+                </ul>
+            </div>
+            <div class="copyrigts">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa fa-globe"></i>
+                <p>Copyright Â© 2019 All Rights <br>
+                    Reserved.
+                </p>
+            </div>
+        </div>
+        <div class="shown-part d-flex flex-column justify-content-between min-vh-100 py-4 px-2 text-center text-black bg-white">
+            <img src="images/logo.png" alt="">
+            <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+            <div>
+                <i class="fa fa-globe d-block"></i>
+                <i class="fa fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="container w-75" id="searchResult">
+        
+    </div>
+
+    <div class="min-vh-100 position-relative">
+        <div class="spin top-0 start-0 end-0 bottom-0  justify-content-center align-items-center ">
+            <span class="loader2"></span>
+        </div>
+
+        <div class="container">
+            <div class="row py-5 g-4" id="data">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
